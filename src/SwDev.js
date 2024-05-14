@@ -30,7 +30,6 @@ const SwDev = () => {
   const handleShowInstallPrompt = () => {
     console.log({ deferredPrompt });
     if (deferredPrompt) {
-      console.log("1");
       //show popup related to installing app
       deferredPrompt.prompt();
       //remove the element from page

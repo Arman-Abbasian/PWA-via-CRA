@@ -37,6 +37,7 @@ self.addEventListener("fetch", (e) => {
 //notifications--------------
 self.addEventListener("push", (event) => {
   const notification = event.data.json();
+  console.log({ pushEvent: event });
   const options = {
     body: notification.body,
     icon: "/assets/images/codeyadIcon.png",
